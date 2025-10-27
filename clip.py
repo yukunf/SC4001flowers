@@ -1,6 +1,7 @@
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
-
+import torch
+from transformers import pipeline
 
 # Configuration
 LOADER_PATCH_SIZE = 32
@@ -42,7 +43,11 @@ test_dataset = datasets.Flowers102(
     transform=transform
 )
 
-# ---------- 3. 封装为 DataLoader ----------
+# ---------- 3. DataLoader ----------
 train_loader = DataLoader(train_dataset, batch_size=LOADER_PATCH_SIZE, shuffle=True)
 val_loader = DataLoader(val_dataset, batch_size=LOADER_PATCH_SIZE, shuffle=False)
 test_loader = DataLoader(test_dataset, batch_size=LOADER_PATCH_SIZE, shuffle=False)
+
+
+
+
