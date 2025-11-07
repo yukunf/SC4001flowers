@@ -1,0 +1,4 @@
+Model,Test Accuracy,Best Val Accuracy
+ResNet18 Original,0.8803057407708571,"tensor(0.9167, dtype=torch.float64)"
+ResNet18 Frozen,0.8868108635550496,"tensor(0.9157, dtype=torch.float64)"
+ResNet34 Frozen,0.8999837371930395,"tensor(0.9314, dtype=torch.float64)"
