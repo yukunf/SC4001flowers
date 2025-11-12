@@ -52,12 +52,6 @@
   - Results CSV: `resnet34_few_shot_results.csv`
 - **Data fractions tested**: 10%, 20%, 30%, 50%, 75%, 100%
 
-### 6. MixUp and Triplet Loss
-
-**File**: `ResNet/ResNet34_mixup_and_triplet_loss/resnet34_with_3frozen_stages_addi.ipynb`
-
-- **Purpose**: ResNet-34 with advanced regularization and loss functions
-
 ## Model Checkpoints Location
 
 All trained models are saved in their respective experiment folders:
@@ -112,7 +106,6 @@ SC4001flowers/
 │   ├── ResNet18_Frozen/
 │   ├── ResNet34_Frozen/
 │   ├── ResNet34_frozen_few_shot_analysis/
-│   ├── ResNet34_mixup_and_triplet_loss/
 │   ├── experiment_results_comparison.ipynb
 │   └── model_checkpoints/
 └── data/
