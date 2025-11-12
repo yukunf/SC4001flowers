@@ -42,16 +42,6 @@
 - **Purpose**: Comparative analysis of all ResNet experiments
 - **Output**: `all_experiments_comparison.png`
 
-### 5. Few-Shot Learning Analysis
-
-**File**: `ResNet/ResNet34_frozen_few_shot_analysis/resnet34_few_shot.ipynb`
-
-- **Purpose**: Data efficiency analysis with limited training samples
-- **Output**:
-  - Analysis plot: `resnet34_few_shot_analysis.png`
-  - Results CSV: `resnet34_few_shot_results.csv`
-- **Data fractions tested**: 10%, 20%, 30%, 50%, 75%, 100%
-
 ## Model Checkpoints Location
 
 All trained models are saved in their respective experiment folders:
@@ -80,8 +70,7 @@ pip install torch torchvision pandas numpy matplotlib scikit-learn pillow scipy 
 
 1. Start with `base_resnet.ipynb` for baseline
 2. Run frozen variants (`resnet18_3frozen_stages.ipynb`, `resnet34_with_3frozen_stages.ipynb`)
-3. Execute few-shot analysis (`resnet34_few_shot.ipynb`)
-4. Run comparison analysis (`experiment_results_comparison.ipynb`)
+3. Run comparison analysis (`experiment_results_comparison.ipynb`)
 
 ### Expected Outputs for Each Notebook
 
@@ -105,7 +94,6 @@ SC4001flowers/
 │   ├── ResNet18_Standard/
 │   ├── ResNet18_Frozen/
 │   ├── ResNet34_Frozen/
-│   ├── ResNet34_frozen_few_shot_analysis/
 │   ├── experiment_results_comparison.ipynb
 │   └── model_checkpoints/
 └── data/
